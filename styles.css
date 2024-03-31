@@ -383,3 +383,80 @@ footer {
     height: auto;
     margin-right: 5px;
 }
+/* Add your existing CSS rules here */
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+    /* Adjustments for navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        opacity: 0;
+        
+    }
+    .navbar:hover{
+        opacity: 1;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    /* Adjustments for section cells */
+    .section-cell {
+        padding: 20px;
+    }
+
+    /* Adjustments for about section */
+    .about-section {
+        flex-direction: column-reverse;
+    }
+
+    .about-section img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Adjustments for experiences section */
+    .experiences-section .experience {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-image img {
+        max-width: 100%;
+        max-height: auto;
+        margin-bottom: 20px;
+    }
+
+    /* Adjustments for skills section */
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Adjustments for project section */
+    .projects-section {
+        padding: 10px;
+    }
+
+    .project-slider {
+        width: 100%;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .project-image img {
+        width: 100%;
+    }
+}
