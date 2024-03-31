@@ -389,11 +389,6 @@ footer {
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
 
-    /* Adjustments for navbar */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
 
     .navbar-list {
         flex-direction: column;
