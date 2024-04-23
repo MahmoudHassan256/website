@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sedgwick+Ave+Display&display=swap');
 
-:root{
-    --dark-color:#3d5a80;
-    --color:#98c1d9;
-    --light-color:#e0fbfc;
-    --orange:#ee6c4d;
-    --black:#293241;
+:root {
+    --dark-color: #3d5a80;
+    --color: #98c1d9;
+    --light-color: #e0fbfc;
+    --orange: #ee6c4d;
+    --black: #293241;
 }
 
- html,
- body {
-     height: 100%;
-     margin: 0;
-     overflow-x: hidden;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
 
- }
-  body {
-      display: flex;
-      flex-direction: column;
-  }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Styling the navigation bar */
 .navbar {
@@ -29,7 +30,8 @@
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    top: 0;left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 999;
     /* Ensure it stays on top of other content */
@@ -100,6 +102,7 @@ footer {
 .footer-info {
     margin-top: 10px;
 }
+
 /* Styles for the About Me section */
 .about-section {
     padding: 40px;
@@ -132,6 +135,7 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 .experience {
     display: flex;
     flex-direction: row;
@@ -160,10 +164,10 @@ footer {
 }
 
 .experience-image img {
-        max-width: 200px;
-        max-height: 150px;
-        border-radius: 8px;
-        margin-bottom: 20px;
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .welcome-message {
@@ -177,6 +181,7 @@ footer {
     color: #4ecdc4;
     font-style: italic;
 }
+
 .ball {
     width: 50px;
     height: 50px;
@@ -210,8 +215,9 @@ footer {
     top: 0;
     left: 0;
 }
+
 .skills-section {
-        background-color: var(--light-color);
+    background-color: var(--light-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,6 +317,7 @@ footer {
 .form-button:focus {
     outline: none;
 }
+
 /* Style for the projects section */
 .projects-section {
     padding: 20px;
@@ -360,10 +367,12 @@ footer {
 .project a:hover {
     background-color: #555;
 }
-.project-image{
+
+.project-image {
     display: flex;
     justify-content: center;
 }
+
 /* Style for project images */
 .project-image img {
     width: 50%;
@@ -384,6 +393,7 @@ footer {
     height: auto;
     margin-right: 5px;
 }
+
 /* Add your existing CSS rules here */
 
 /* Media query for smaller screens */

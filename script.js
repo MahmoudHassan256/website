@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const quoteElement = document.getElementById("quote");
   const authorElement = document.getElementById("author");
 
-  const funWords = ["Awesome", "Sexy", "Fantastic", "Amazing", "Incredible"];
+  const funWords = ["Full-stack", "Front-end", "Back-end", "Java", "C++"];
   const funTextElement = document.getElementById("fun-text");
 
   const skills = document.querySelectorAll(".skill");
@@ -32,37 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     return color;
   }
-  const ball = document.getElementById("ball");
   const randomTop = Math.random();
   const randomLeft = Math.random();
 
-  // Set the CSS variables on the ball element
-  ball.style.setProperty("--random-top", randomTop);
-  ball.style.setProperty("--random-left", randomLeft);
   // Generate random values for --random-top and --random-left CSS variables
-  ball.addEventListener("mouseover", function () {
-    const randomTop = Math.random();
-    const randomLeft = Math.random();
-
-    // Set the CSS variables on the ball element
-    ball.style.setProperty("--random-top", randomTop);
-    ball.style.setProperty("--random-left", randomLeft);
-    ball.style.backgroundColor = getRandomColor();
-  });
-
   // Function to update the fun word every 5 seconds
-  function updateFunWord() {
-    const randomIndex = Math.floor(Math.random() * funWords.length);
-    const randomWord = funWords[randomIndex];
+  function updateFunWord(index) {
+    const randomWord = funWords[(index % funWords.length)];
     funTextElement.textContent = randomWord;
     funTextElement.style.color = getRandomColor();
   }
-
+  let index = 0;
   // Initial update of the fun word
-  updateFunWord();
+  updateFunWord(index);
+  
 
   // Periodically update the fun word every 5 seconds
-  setInterval(updateFunWord, 1000);
+  setInterval(()=>updateFunWord(++index), 1000);
   // Fetch a random quote from the quote API
   fetch(quoteApiUrl)
     .then((response) => {
