@@ -179,7 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Platform-2D-Game",
       description:
         "The Platform 2D Game is an adventure game set in a vibrant 2D world. Players navigate through levels, guiding their companion, Mike, through forests and caves while overcoming obstacles and battling enemies like Crabby. With intuitive controls and captivating visuals, the game offers an immersive experience for players of all levels.",
-      githubRepo: "https://github.com/MahmoudHassan256/2D-Platform-Java-Gamer",
+      githubRepo: "https://github.com/MahmoudHassan256/2D-Platform-Java-Game",
       skillsUsed: ["java"],
     },
     {
